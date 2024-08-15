@@ -1,0 +1,9 @@
+services:
+    thermastore-streamer:
+        image: thermastore-streamer-image
+        stdin_open: true
+        tty: true
+        container_name: thermastore-streamer-container
+        ports:
+            - 8000:8000
+        build: ./
